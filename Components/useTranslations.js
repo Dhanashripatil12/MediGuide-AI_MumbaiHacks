@@ -1,0 +1,290 @@
+import { getCurrentLanguage } from "./LanguageSelector";
+
+export const translations = {
+  'en-IN': {
+    // Navigation
+    dashboard: "Dashboard",
+    identifyPill: "Identify Pill",
+    findDoctor: "Find Doctor",
+    emergency: "Emergency",
+    settings: "Settings",
+    adminPanel: "Admin Panel",
+    
+    // Common
+    loading: "Loading...",
+    save: "Save",
+    cancel: "Cancel",
+    delete: "Delete",
+    edit: "Edit",
+    add: "Add",
+    search: "Search",
+    filter: "Filter",
+    close: "Close",
+    viewAll: "View All",
+    back: "Back",
+    
+    // Dashboard
+    welcomeMessage: "Smart healthcare assistant powered by OCR and AI. Identify medicines instantly and find the right doctors based on your symptoms.",
+    medicineIdentifier: "Medicine Identifier",
+    medicineIdentifierDesc: "Upload or scan medicine strips/bottles. Our OCR technology extracts medicine names, expiry dates, and provides detailed information with voice output.",
+    doctorFinder: "Doctor Finder",
+    doctorFinderDesc: "Describe symptoms via text or voice. Smart AI maps your problems to the right specialists and finds top-rated doctors in your city.",
+    quickActions: "Quick Actions",
+    healthOverview: "Health Overview",
+    medicinesIdentified: "Medicines Identified",
+    availableDoctors: "Available Doctors",
+    emergencyContacts: "Emergency Contacts",
+    emergencyMode: "Emergency Mode",
+    emergencyAccess: "Quick access to emergency contacts and medical info",
+    recentScans: "Recent Medicine Scans",
+    
+    // Pill Identifier
+    uploadMedicine: "Upload Medicine Image",
+    uploadImage: "Upload Image",
+    takePhoto: "Take Photo",
+    analyzingMedicine: "Analyzing Medicine...",
+    identifyMedicine: "Identify Medicine",
+    medicineIdentified: "Medicine Identified",
+    readAloud: "Read Aloud",
+    usedFor: "What It's Used For",
+    dosageByAge: "Age-Specific Dosage Guidelines",
+    whenToUse: "When & How to Use",
+    sideEffects: "Side Effects",
+    commonSideEffects: "Common Side Effects",
+    seriousSideEffects: "Serious Side Effects",
+    warnings: "Warnings",
+    doNotUse: "Do NOT use if:",
+    drugInteractions: "Drug Interactions",
+    storage: "Storage",
+    missedDose: "Missed Dose",
+    
+    // Doctor Search
+    findYourDoctor: "Find Your Doctor",
+    describeSymptoms: "Describe your problem or symptom",
+    selectCity: "Select your city",
+    findDoctors: "Find Doctors",
+    searching: "Searching...",
+    doctorsFound: "doctors found",
+    noDoctorsFound: "No doctors found",
+    callNow: "Call Now",
+    recommended: "Recommended",
+    yearsExp: "years exp.",
+    
+    // Emergency
+    emergencyDashboard: "Emergency Dashboard",
+    currentLocation: "Your Current Location",
+    getLocation: "Get My Location",
+    copyLocation: "Copy Location",
+    shareLocation: "Share Location",
+    call: "Call",
+    ambulance: "Ambulance",
+    alertContacts: "Alert Emergency Contacts",
+    medicalProfile: "Medical Profile",
+    bloodType: "Blood Type",
+    allergies: "Allergies",
+    currentMedications: "Current Medications",
+    
+    // Settings
+    appearance: "Appearance",
+    darkMode: "Dark Mode",
+    userProfile: "User Profile",
+    signOut: "Sign Out",
+    signIn: "Sign In",
+    savedMedicines: "My Identified Medicines",
+    medicalProfileSettings: "Medical Profile",
+    emergencyContactsSettings: "Emergency Contacts"
+  },
+  
+  'hi-IN': {
+    // Navigation
+    dashboard: "डैशबोर्ड",
+    identifyPill: "दवाई पहचानें",
+    findDoctor: "डॉक्टर खोजें",
+    emergency: "आपातकाल",
+    settings: "सेटिंग्स",
+    adminPanel: "एडमिन पैनल",
+    
+    // Common
+    loading: "लोड हो रहा है...",
+    save: "सहेजें",
+    cancel: "रद्द करें",
+    delete: "हटाएं",
+    edit: "संपादित करें",
+    add: "जोड़ें",
+    search: "खोजें",
+    filter: "फ़िल्टर",
+    close: "बंद करें",
+    viewAll: "सभी देखें",
+    back: "वापस",
+    
+    // Dashboard
+    welcomeMessage: "OCR और AI द्वारा संचालित स्मार्ट स्वास्थ्य सहायक। दवाइयों की तुरंत पहचान करें और अपने लक्षणों के आधार पर सही डॉक्टर खोजें।",
+    medicineIdentifier: "दवाई पहचानकर्ता",
+    medicineIdentifierDesc: "दवाई की पट्टी या बोतल की फोटो अपलोड या स्कैन करें। हमारी OCR तकनीक दवा का नाम, समाप्ति तिथि निकालती है और आवाज के साथ विस्तृत जानकारी प्रदान करती है।",
+    doctorFinder: "डॉक्टर खोजकर्ता",
+    doctorFinderDesc: "टेक्स्ट या आवाज के माध्यम से लक्षण बताएं। स्मार्ट AI आपकी समस्याओं को सही विशेषज्ञों से जोड़ता है और आपके शहर में शीर्ष रेटेड डॉक्टरों को खोजता है।",
+    quickActions: "त्वरित क्रियाएं",
+    healthOverview: "स्वास्थ्य अवलोकन",
+    medicinesIdentified: "पहचानी गई दवाएं",
+    availableDoctors: "उपलब्ध डॉक्टर",
+    emergencyContacts: "आपातकालीन संपर्क",
+    emergencyMode: "आपातकालीन मोड",
+    emergencyAccess: "आपातकालीन संपर्कों और चिकित्सा जानकारी तक त्वरित पहुंच",
+    recentScans: "हाल की दवाई स्कैन",
+    
+    // Pill Identifier
+    uploadMedicine: "दवाई की तस्वीर अपलोड करें",
+    uploadImage: "तस्वीर अपलोड करें",
+    takePhoto: "फोटो लें",
+    analyzingMedicine: "दवाई का विश्लेषण हो रहा है...",
+    identifyMedicine: "दवाई पहचानें",
+    medicineIdentified: "दवाई की पहचान हो गई",
+    readAloud: "जोर से पढ़ें",
+    usedFor: "इसका उपयोग किसके लिए है",
+    dosageByAge: "उम्र के अनुसार खुराक दिशानिर्देश",
+    whenToUse: "कब और कैसे उपयोग करें",
+    sideEffects: "दुष्प्रभाव",
+    commonSideEffects: "सामान्य दुष्प्रभाव",
+    seriousSideEffects: "गंभीर दुष्प्रभाव",
+    warnings: "चेतावनियां",
+    doNotUse: "उपयोग न करें यदि:",
+    drugInteractions: "दवा परस्पर क्रिया",
+    storage: "भंडारण",
+    missedDose: "छूटी हुई खुराक",
+    
+    // Doctor Search
+    findYourDoctor: "अपना डॉक्टर खोजें",
+    describeSymptoms: "अपनी समस्या या लक्षण बताएं",
+    selectCity: "अपना शहर चुनें",
+    findDoctors: "डॉक्टर खोजें",
+    searching: "खोज रहे हैं...",
+    doctorsFound: "डॉक्टर मिले",
+    noDoctorsFound: "कोई डॉक्टर नहीं मिला",
+    callNow: "अभी कॉल करें",
+    recommended: "अनुशंसित",
+    yearsExp: "साल का अनुभव",
+    
+    // Emergency
+    emergencyDashboard: "आपातकालीन डैशबोर्ड",
+    currentLocation: "आपका वर्तमान स्थान",
+    getLocation: "मेरा स्थान प्राप्त करें",
+    copyLocation: "स्थान कॉपी करें",
+    shareLocation: "स्थान साझा करें",
+    call: "कॉल करें",
+    ambulance: "एम्बुलेंस",
+    alertContacts: "आपातकालीन संपर्कों को सूचित करें",
+    medicalProfile: "चिकित्सा प्रोफ़ाइल",
+    bloodType: "रक्त समूह",
+    allergies: "एलर्जी",
+    currentMedications: "वर्तमान दवाएं",
+    
+    // Settings
+    appearance: "दिखावट",
+    darkMode: "डार्क मोड",
+    userProfile: "उपयोगकर्ता प्रोफ़ाइल",
+    signOut: "साइन आउट",
+    signIn: "साइन इन",
+    savedMedicines: "मेरी पहचानी गई दवाएं",
+    medicalProfileSettings: "चिकित्सा प्रोफ़ाइल",
+    emergencyContactsSettings: "आपातकालीन संपर्क"
+  },
+  
+  'mr-IN': {
+    // Navigation
+    dashboard: "डॅशबोर्ड",
+    identifyPill: "औषध ओळखा",
+    findDoctor: "डॉक्टर शोधा",
+    emergency: "आणीबाणी",
+    settings: "सेटिंग्ज",
+    adminPanel: "अॅडमिन पॅनेल",
+    
+    // Common
+    loading: "लोड होत आहे...",
+    save: "जतन करा",
+    cancel: "रद्द करा",
+    delete: "हटवा",
+    edit: "संपादित करा",
+    add: "जोडा",
+    search: "शोधा",
+    filter: "फिल्टर",
+    close: "बंद करा",
+    viewAll: "सर्व पहा",
+    back: "परत",
+    
+    // Dashboard
+    welcomeMessage: "OCR आणि AI द्वारे समर्थित स्मार्ट आरोग्य सहाय्यक। औषधे त्वरित ओळखा आणि तुमच्या लक्षणांवर आधारित योग्य डॉक्टर शोधा।",
+    medicineIdentifier: "औषध ओळखकर्ता",
+    medicineIdentifierDesc: "औषधाची पट्टी किंवा बाटली अपलोड किंवा स्कॅन करा। आमचे OCR तंत्रज्ञान औषधाचे नाव, कालबाह्यता तारीख काढते आणि आवाजासह तपशीलवार माहिती प्रदान करते।",
+    doctorFinder: "डॉक्टर शोधकर्ता",
+    doctorFinderDesc: "मजकूर किंवा आवाजाद्वारे लक्षणे सांगा। स्मार्ट AI तुमच्या समस्या योग्य तज्ञांशी जोडतो आणि तुमच्या शहरात शीर्ष रेट केलेले डॉक्टर शोधतो।",
+    quickActions: "जलद क्रिया",
+    healthOverview: "आरोग्य विहंगावलोकन",
+    medicinesIdentified: "ओळखली गेलेली औषधे",
+    availableDoctors: "उपलब्ध डॉक्टर",
+    emergencyContacts: "आणीबाणी संपर्क",
+    emergencyMode: "आणीबाणी मोड",
+    emergencyAccess: "आणीबाणी संपर्क आणि वैद्यकीय माहितीसाठी जलद प्रवेश",
+    recentScans: "अलीकडील औषध स्कॅन",
+    
+    // Pill Identifier
+    uploadMedicine: "औषधाचे चित्र अपलोड करा",
+    uploadImage: "चित्र अपलोड करा",
+    takePhoto: "फोटो घ्या",
+    analyzingMedicine: "औषधाचे विश्लेषण करत आहे...",
+    identifyMedicine: "औषध ओळखा",
+    medicineIdentified: "औषध ओळखले गेले",
+    readAloud: "मोठ्याने वाचा",
+    usedFor: "याचा उपयोग कशासाठी आहे",
+    dosageByAge: "वयानुसार डोस मार्गदर्शक तत्त्वे",
+    whenToUse: "कधी आणि कसे वापरावे",
+    sideEffects: "दुष्परिणाम",
+    commonSideEffects: "सामान्य दुष्परिणाम",
+    seriousSideEffects: "गंभीर दुष्परिणाम",
+    warnings: "इशारे",
+    doNotUse: "वापरू नका जर:",
+    drugInteractions: "औषध परस्परसंवाद",
+    storage: "साठवणूक",
+    missedDose: "चुकलेला डोस",
+    
+    // Doctor Search
+    findYourDoctor: "तुमचा डॉक्टर शोधा",
+    describeSymptoms: "तुमची समस्या किंवा लक्षण सांगा",
+    selectCity: "तुमचे शहर निवडा",
+    findDoctors: "डॉक्टर शोधा",
+    searching: "शोधत आहे...",
+    doctorsFound: "डॉक्टर सापडले",
+    noDoctorsFound: "डॉक्टर सापडले नाहीत",
+    callNow: "आता कॉल करा",
+    recommended: "शिफारस केलेले",
+    yearsExp: "वर्षांचा अनुभव",
+    
+    // Emergency
+    emergencyDashboard: "आणीबाणी डॅशबोर्ड",
+    currentLocation: "तुमचे सध्याचे स्थान",
+    getLocation: "माझे स्थान मिळवा",
+    copyLocation: "स्थान कॉपी करा",
+    shareLocation: "स्थान सामायिक करा",
+    call: "कॉल करा",
+    ambulance: "रुग्णवाहिका",
+    alertContacts: "आणीबाणी संपर्कांना सूचित करा",
+    medicalProfile: "वैद्यकीय प्रोफाइल",
+    bloodType: "रक्त गट",
+    allergies: "ऍलर्जी",
+    currentMedications: "सध्याची औषधे",
+    
+    // Settings
+    appearance: "स्वरूप",
+    darkMode: "डार्क मोड",
+    userProfile: "वापरकर्ता प्रोफाइल",
+    signOut: "साइन आउट",
+    signIn: "साइन इन",
+    savedMedicines: "माझी ओळखलेली औषधे",
+    medicalProfileSettings: "वैद्यकीय प्रोफाइल",
+    emergencyContactsSettings: "आणीबाणी संपर्क"
+  }
+};
+
+export const useTranslations = () => {
+  const lang = getCurrentLanguage();
+  return translations[lang] || translations['en-IN'];
+};

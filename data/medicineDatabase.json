@@ -1,0 +1,194 @@
+{
+  "medicines": [
+    {
+      "id": "MED001",
+      "genericName": "Paracetamol",
+      "brandNames": ["Crocin", "Tylenol", "Acetaminophen", "Paracetamol"],
+      "dosage": "500mg",
+      "type": "tablet",
+      "indications": ["Fever", "Headache", "Body pain", "Mild to moderate pain"],
+      "usedFor": "Pain relief and fever reduction",
+      "dosageByAge": {
+        "adults": "1-2 tablets (500-1000mg) every 4-6 hours",
+        "children6_17": "0.5-1 tablet (250-500mg) every 4-6 hours",
+        "elderly": "1 tablet every 6-8 hours"
+      },
+      "whenToUse": "After meals or with water",
+      "frequency": "Every 4-6 hours, max 4000mg per day",
+      "precautions": ["Do not exceed 4000mg per day", "Not for liver disease patients", "Avoid alcohol"],
+      "sideEffects": ["Nausea", "Dizziness", "Stomach upset"],
+      "manufacturer": "GSK"
+    },
+    {
+      "id": "MED002",
+      "genericName": "Aspirin",
+      "brandNames": ["Aspirin", "Bayer", "Disprin", "Ecotrin", "Bufferin"],
+      "dosage": "500mg",
+      "type": "tablet",
+      "indications": ["Pain relief", "Fever", "Anti-inflammatory", "Heart attack prevention"],
+      "usedFor": "Pain, fever, and inflammation relief with blood thinning properties",
+      "dosageByAge": {
+        "adults": "1-2 tablets (500-1000mg) every 4-6 hours",
+        "children": "NOT RECOMMENDED - Risk of Reye's syndrome",
+        "elderly": "Lower doses (325mg) recommended"
+      },
+      "whenToUse": "After meals with water - ALWAYS with food",
+      "frequency": "Every 4-6 hours, max 4000mg per day",
+      "precautions": ["Take with food to prevent stomach ulcers", "NOT safe for children", "Avoid during pregnancy"],
+      "sideEffects": ["Stomach irritation", "Heartburn", "Dizziness"],
+      "manufacturer": "Bayer"
+    },
+    {
+      "id": "MED003",
+      "genericName": "Ibuprofen",
+      "brandNames": ["Brufen", "Advil", "Ibuprofen", "Motrin", "Nurofen"],
+      "dosage": "200mg",
+      "type": "tablet",
+      "indications": ["Pain relief", "Fever", "Anti-inflammatory", "Headache", "Muscle aches"],
+      "usedFor": "NSAID for pain, fever and inflammation",
+      "dosageByAge": {
+        "adults": "1-2 tablets (200-400mg) every 6-8 hours",
+        "children6_17": "As per doctor's guidance",
+        "elderly": "Lower doses recommended"
+      },
+      "whenToUse": "With food or milk",
+      "frequency": "Every 6-8 hours, max 1200mg per day",
+      "precautions": ["Take with food to prevent stomach upset", "Avoid in pregnancy", "Risk of kidney and heart problems"],
+      "sideEffects": ["Stomach upset", "Heartburn", "Dizziness", "Headache"],
+      "manufacturer": "Boots Healthcare"
+    },
+    {
+      "id": "MED004",
+      "genericName": "Metformin",
+      "brandNames": ["Metformin", "Glucophage", "Diabeta", "Glucomet", "Gluformin"],
+      "dosage": "500mg",
+      "type": "tablet",
+      "indications": ["Type 2 diabetes", "Blood sugar control", "PCOS", "Prediabetes prevention"],
+      "usedFor": "Reduces glucose production and improves insulin sensitivity for diabetes management",
+      "dosageByAge": {
+        "adults": "500-1000mg twice daily with meals",
+        "children": "Consult doctor",
+        "elderly": "May need dose adjustment"
+      },
+      "whenToUse": "During or immediately after meals",
+      "frequency": "Twice or three times daily, max 2000-2500mg per day",
+      "precautions": ["Must take with meals", "Avoid alcohol", "Stay well hydrated", "Monitor kidney function"],
+      "sideEffects": ["Nausea", "Diarrhea", "Stomach upset", "Metallic taste"],
+      "manufacturer": "Merck"
+    },
+    {
+      "id": "MED005",
+      "genericName": "Omeprazole",
+      "brandNames": ["Omeprazole", "Prilosec", "Omez", "Nexium", "Losec"],
+      "dosage": "20mg",
+      "type": "capsule",
+      "indications": ["Acid reflux", "GERD", "Ulcer prevention", "Heartburn", "Gastric protection"],
+      "usedFor": "Proton pump inhibitor that reduces stomach acid production",
+      "dosageByAge": {
+        "adults": "1 capsule (20mg) once daily",
+        "children": "Consult doctor",
+        "elderly": "1 capsule once daily"
+      },
+      "whenToUse": "30-60 minutes BEFORE breakfast on empty stomach",
+      "frequency": "Once daily, max 40mg per day",
+      "precautions": ["Take before meals on empty stomach", "May affect B12 absorption", "Long-term use needs monitoring"],
+      "sideEffects": ["Nausea", "Diarrhea", "Constipation", "Headache"],
+      "manufacturer": "AstraZeneca"
+    },
+    {
+      "id": "MED006",
+      "genericName": "Lisinopril",
+      "brandNames": ["Lisinopril", "Zestril", "Lisigon", "Zestoretic", "Carace"],
+      "dosage": "10mg",
+      "type": "tablet",
+      "indications": ["High blood pressure", "Heart failure", "Post-MI treatment", "Diabetic nephropathy prevention"],
+      "usedFor": "ACE inhibitor that relaxes blood vessels and improves blood flow for blood pressure control",
+      "dosageByAge": {
+        "adults": "10mg once daily, may increase to 20-40mg",
+        "children": "Consult doctor",
+        "elderly": "Start with lower dose (5mg)"
+      },
+      "whenToUse": "Same time daily, preferably morning",
+      "frequency": "Once daily, max 40mg per day",
+      "precautions": ["Monitor blood pressure regularly", "Avoid potassium supplements", "Report dry cough immediately", "Maintain hydration"],
+      "sideEffects": ["Dizziness", "Dry cough", "Fatigue", "Low blood pressure"],
+      "manufacturer": "AstraZeneca"
+    },
+    {
+      "id": "MED007",
+      "genericName": "Amoxicillin",
+      "brandNames": ["Amoxicillin", "Amoxil", "Trimox", "Biomox", "Amoxypen"],
+      "dosage": "250mg",
+      "type": "capsule",
+      "indications": ["Bacterial infections", "Ear infection", "Urinary tract infection", "Pneumonia", "Strep throat"],
+      "usedFor": "Penicillin-based antibiotic for treating bacterial infections",
+      "dosageByAge": {
+        "adults": "250-500mg every 8 hours",
+        "children": "As per weight and age - consult doctor",
+        "infants": "Liquid formulation only"
+      },
+      "whenToUse": "With or without food",
+      "frequency": "Every 8 hours, complete full course",
+      "precautions": ["Complete full course even if feeling better", "Allergic to penicillin - DO NOT USE", "May reduce contraceptive effectiveness"],
+      "sideEffects": ["Nausea", "Diarrhea", "Rash", "Allergic reactions"],
+      "manufacturer": "Various"
+    },
+    {
+      "id": "MED008",
+      "genericName": "Cetirizine",
+      "brandNames": ["Cetirizine", "Zirtec", "Alleroff", "Cetcip", "Alocet"],
+      "dosage": "10mg",
+      "type": "tablet",
+      "indications": ["Allergies", "Hay fever", "Urticaria", "Itching", "Allergic rhinitis"],
+      "usedFor": "Antihistamine for treating allergy symptoms",
+      "dosageByAge": {
+        "adults": "1 tablet (10mg) once daily",
+        "children6_12": "0.5 tablet (5mg) once daily",
+        "elderly": "1 tablet once daily"
+      },
+      "whenToUse": "Once daily, preferably evening",
+      "frequency": "Once daily, max 10mg per day",
+      "precautions": ["May cause drowsiness", "Avoid alcohol", "Don't drive after taking"],
+      "sideEffects": ["Drowsiness", "Dry mouth", "Headache", "Fatigue"],
+      "manufacturer": "Various"
+    },
+    {
+      "id": "MED009",
+      "genericName": "Atorvastatin",
+      "brandNames": ["Atorvastatin", "Lipitor", "Atoris", "Atorlip", "Atorbest"],
+      "dosage": "20mg",
+      "type": "tablet",
+      "indications": ["High cholesterol", "Heart disease prevention", "Stroke prevention", "Dyslipidemia"],
+      "usedFor": "Statin for reducing cholesterol and preventing heart disease",
+      "dosageByAge": {
+        "adults": "10-80mg once daily",
+        "children": "Consult doctor",
+        "elderly": "Start with lower dose"
+      },
+      "whenToUse": "Once daily, anytime of day",
+      "frequency": "Once daily, max 80mg per day",
+      "precautions": ["Avoid grapefruit juice", "Monitor liver function", "May cause muscle pain"],
+      "sideEffects": ["Muscle pain", "Weakness", "Nausea", "Diarrhea"],
+      "manufacturer": "Pfizer"
+    },
+    {
+      "id": "MED010",
+      "genericName": "Amlodipine",
+      "brandNames": ["Amlodipine", "Norvasc", "Amlong", "Amlip", "Amlogard"],
+      "dosage": "5mg",
+      "type": "tablet",
+      "indications": ["High blood pressure", "Angina", "Coronary artery disease"],
+      "usedFor": "Calcium channel blocker for managing blood pressure and angina",
+      "dosageByAge": {
+        "adults": "5mg once daily, may increase to 10mg",
+        "children": "Consult doctor",
+        "elderly": "Start with 2.5mg"
+      },
+      "whenToUse": "Once daily, same time preferred",
+      "frequency": "Once daily, max 10mg per day",
+      "precautions": ["Do not stop abruptly", "Avoid grapefruit juice", "Monitor blood pressure"],
+      "sideEffects": ["Swollen ankles", "Headache", "Dizziness", "Fatigue"],
+      "manufacturer": "Pfizer"
+    }
+  ]
+}
